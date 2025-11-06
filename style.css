@@ -33,3 +33,20 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
+
+#aboutdrsaga{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+
+    img{
+        object-fit: contain;
+
+    }
+
+    p{
+        flex: 1 1 auto;
+
+    }
+    
+}
