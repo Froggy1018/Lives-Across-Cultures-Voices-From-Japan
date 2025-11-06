@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#background{
+    background-image: url('https://i.ibb.co/RpMvh1dW/Screenshot-2025-11-06-205025.png');
+    background-size: cover;
+    color: white;
+}
+
+#titlepartandlogo{
+    padding: 50px;
+}
+
+#buttonsandtitle{
+    padding: 50px;
+    text-align: center;
+    font-size:40px;
+    margin-bottom: 50px;
+
+    button{
+        margin-top: 50px;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 100px;
+        background-color: #3B3B3B;
+        border: none;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
