@@ -30,6 +30,11 @@
         background-color: #3B3B3B;
         border: none;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        &:hover{
+            cursor: pointer;
+            background-color: #fffffd;
+            color: #3B3B3B;
+        }
     }
 }
 
@@ -141,3 +146,19 @@ form{
     margin-bottom:50px;
 }
 
+#studentint{
+        button{
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 100px;
+        margin-top: 40px;
+        border: none;
+        background-color: #32373D;
+        color:#fffffd;
+        &:hover{
+            cursor: pointer;
+            background-color: #fffffd;
+            color: #32373D;
+        }
+        }
+}
