@@ -164,3 +164,8 @@ form{
         }
         }
 }
+
+#senduser{
+    display: flex;
+    gap: 10px;
+}
