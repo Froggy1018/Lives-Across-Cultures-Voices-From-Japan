@@ -17,7 +17,7 @@
 #buttonsandtitle{
     padding: 50px;
     text-align: center;
-    font-size:40px;
+    font-size: clamp(24px, 5vw, 40px);
     margin-bottom: 50px;
     margin-top: 50px;
 
@@ -26,7 +26,7 @@
         margin-bottom: 100px;
         color: white;
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
         border-radius: 100px;
         background-color: #3B3B3B;
         border: none;
@@ -45,7 +45,7 @@
     margin-bottom: 100px;
     h1{
         margin-bottom: 30px;
-        font-size: 40px;
+        font-size: clamp(24px, 5vw, 40px);
     }
 }
 
@@ -65,19 +65,19 @@
     padding-left: 30px;
     h1{
         color: #fffffd;
-        font-size: 50px;
+        font-size: clamp(30px, 6vw, 50px);
     }
     p{
         margin-top: 20px;
         color:#989ca0;
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin-bottom: 30px;
         margin-right: 50%;
     }
     button{
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
         border-radius: 100px;
         border: none;
         &:hover{
@@ -97,16 +97,16 @@ footer{
 }
 
 form{
-    margin-left: 30%;
+    margin-left: 0;
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     label{
-        font-size: 30px;
+        font-size: clamp(20px, 4vw, 30px);
         padding-bottom: 30px;
     }
     button{
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
         border-radius: 100px;
         border: none;
         background-color: #32373D;
@@ -122,19 +122,20 @@ form{
 #name, #thoughts, #feedback, #email{
     border-radius: 50px;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: clamp(16px, 3vw, 20px);
     width: 100%;
 }
 
 #form{
     h1{
-        padding-left: 30px;
+        padding-left: 0;
         padding-top: 30px;
         text-align: center;
+        font-size: clamp(20px, 4vw, 30px);
     }
     button{
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
         border-radius: 100px;
         border: none;
         background-color: #32373D;
@@ -168,16 +169,205 @@ form{
 }
 
 #senduser{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
     gap: 10px;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
-#abovefooter{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: 40px;
+#titlepartandlogo img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+#senduser a {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+#senduser a:hover {
+    transform: scale(1.1);
+}
+
+#senduser img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+#aboutdrsaga img {
+    width: 450px;
+    height: auto;
+    max-width: 100%;
+}
+.video-iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 450px;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 768px) {
+    #titlepartandlogo {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #titlepartandlogo img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    #titlepartandlogo span {
+        font-size: 24px;
+    }
+    
+    #buttonsandtitle {
+        padding: 20px;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    #buttonsandtitle button {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    #studentint h1 {
+        font-size: 30px;
+    }
+    
+    #aboutdrsaga {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 75px;
+    }
+    
+    #aboutdrsaga img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+    #aboutdrsaga p {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    #aboutdrsaga p span {
+        font-size: 30px;
+    }
+    
+    #abovefooter {
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+    
+    #abovefooter h1 {
+        font-size: 35px;
+    }
+    
+    #abovefooter p {
+        font-size: 16px;
+        margin-right: 0;
+    }
+    
+    #senduser {
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+    
+    form {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    #form h1 {
+        font-size: 24px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    #name, #thoughts, #feedback, #email {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    #studentint h1:first-child {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #buttonsandtitle {
+        font-size: 24px;
+    }
+    
+    #buttonsandtitle button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    #studentint h1 {
+        font-size: 24px;
+    }
+    
+    #aboutdrsaga p {
+        font-size: 16px;
+    }
+    
+    #aboutdrsaga p span {
+        font-size: 24px;
+    }
+    
+    #abovefooter h1 {
+        font-size: 28px;
+    }
+    
+    #abovefooter p {
+        font-size: 14px;
+    }
+    
+    #senduser img {
+        width: 60px;
+        height: auto;
+    }
+    
+    #form h1 {
+        font-size: 20px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    #name, #thoughts, #feedback, #email {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    #studentint h1:first-child {
+        font-size: 32px;
+    }
 }
