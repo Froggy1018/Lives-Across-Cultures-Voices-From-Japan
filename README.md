@@ -1,1 +1,1 @@
-# Lives-Across-Cultures-Voices-From-Japan
+This website is for my friend's oral history project :D
